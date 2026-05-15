@@ -1,4 +1,4 @@
-# 🌍 Goodwill Language Solution — WhatsApp Chatbot v2.0
+#Goodwill Language Solution — WhatsApp Chatbot v2.0
 
 Official WhatsApp Cloud API chatbot following Meta's production standards.
 
@@ -51,19 +51,22 @@ cp .env.example .env
 Then open `.env` and fill in your values:
 
 ```env
-M4D_APP_ID=1750000929680899
+M4D_APP_ID=your_app_id_here
 M4D_APP_SECRET=your_app_secret_here
-WA_PHONE_NUMBER_ID=1165918746594876
-WA_BUSINESS_ACCOUNT_ID=973881368556685
-CLOUD_API_ACCESS_TOKEN=your_permanent_token_here
+WA_PHONE_NUMBER_ID=your_phone_number_id_here
+WA_BUSINESS_ACCOUNT_ID=your_business_account_id_here
+CLOUD_API_ACCESS_TOKEN=your_access_token_here
 CLOUD_API_VERSION=v19.0
 WEBHOOK_ENDPOINT=webhook
-WEBHOOK_VERIFICATION_TOKEN=goodwill2024
-MANAGER_NUMBER=2349044791052
+WEBHOOK_VERIFICATION_TOKEN=your_verify_token_here
+MANAGER_NUMBER=your_phone_number_here
 LISTENER_PORT=3000
 ```
 
 ---
+⚠️ IMPORTANT:
+Never share your real credentials publicly.
+Create a `.env` file using the template above.
 
 ### STEP 5 — Start the bot
 ```bash
@@ -72,16 +75,16 @@ npm start
 You should see:
 ```
 🚀 Goodwill Language Solution WhatsApp Bot
-📡 Server running on port 3000
+📡 Server running on port ****
 🔗 Webhook endpoint: /webhook
-🌐 Demo: http://localhost:3000
+🌐 Demo: http://localhost:****
 ```
 
 ---
 
 ### STEP 6 — Open ngrok (new terminal tab)
 ```bash
-ngrok http 3000
+ngrok http ****
 ```
 You will see a URL like:
 ```
@@ -92,18 +95,18 @@ Copy that URL.
 ---
 
 ### STEP 7 — Set webhook on Meta
-1. Go to: developers.facebook.com/apps/1750000929680899
+1. Go to: developers.facebook.com/apps/11111111
 2. Click Use cases → Customize → Configuration
 3. Under Webhook click Edit
 4. Callback URL: `https://YOUR_NGROK_URL/webhook`
-5. Verify token: `goodwill2024`
+5. Verify token: `WEBHOOK_VERIFICATION_TOKEN=your_verify_token_here`
 6. Click Verify and save
 7. Scroll down → find messages → click Subscribe
 
 ---
 
 ### STEP 8 — Test it!
-Send "Hi" to +234 904 479 1052 on WhatsApp
+Send "Hi" to +234 000 479 **** on WhatsApp
 The bot replies instantly with the full services menu!
 
 ---
@@ -152,4 +155,4 @@ The bot replies instantly with the full services menu!
 ## 📞 Support
 - Email: Translate@goodwilllanguage.com
 - Website: goodwilllanguage.com
-- Manager: +234 807 976 3934
+- Manager: +234 *** 976 ****
