@@ -1,0 +1,31 @@
+{
+  "name": "goodwill-language-solution-whatsapp-bot",
+  "version": "2.0.0",
+  "description": "Official WhatsApp Cloud API chatbot for Goodwill Language Solution - Certified Language Services in Africa",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "tunnel": "ngrok http 3000"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "keywords": [
+    "whatsapp",
+    "chatbot",
+    "meta",
+    "cloud-api",
+    "goodwill-language"
+  ],
+  "author": "Goodwill Language Solution",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
